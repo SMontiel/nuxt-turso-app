@@ -9,8 +9,16 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@libsql/kysely-libsql": "^0.3.0",
     "@nuxt/devtools": "latest",
+    "@types/uuid": "^9.0.7",
+    "esbuild": "^0.19.9",
+    "esbuild-register": "^3.5.0",
+    "kysely": "^0.26.3",
+    "kysely-codegen": "^0.11.0",
+    "kysely-migration-cli": "^0.2.3",
     "nuxt": "^3.8.2",
+    "uuid": "^9.0.1",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
   }
