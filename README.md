@@ -1,5 +1,7 @@
 # nuxt-turso-app
 
+Simple Nuxt app with a Turso libSQL as database, kysely integration and Lucia Auth.
+
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup

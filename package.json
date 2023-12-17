@@ -9,7 +9,9 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@libsql/client": "^0.3.6",
     "@libsql/kysely-libsql": "^0.3.0",
+    "@lucia-auth/adapter-sqlite": "^2.0.1",
     "@nuxt/devtools": "latest",
     "@types/uuid": "^9.0.7",
     "esbuild": "^0.19.9",
@@ -17,6 +19,7 @@
     "kysely": "^0.26.3",
     "kysely-codegen": "^0.11.0",
     "kysely-migration-cli": "^0.2.3",
+    "lucia": "^2.7.5",
     "nuxt": "^3.8.2",
     "uuid": "^9.0.1",
     "vue": "^3.3.12",
