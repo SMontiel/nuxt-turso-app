@@ -49,6 +49,8 @@ to install the Turso CLI and create a database.
 # Connect to your database
 turso db shell <your-db-name>
 
+export DATABASE_URL=<your-db-url>
+
 # Generate type definitions from db
 npx kysely-codegen --out-file database/db.d.ts
 
@@ -56,9 +58,23 @@ npx kysely-codegen --out-file database/db.d.ts
 node -r esbuild-register database/migrate.ts create <migration-name>
 
 # Apply migrations
-export DATABASE_URL=<your-db-url>
 node -r esbuild-register database/migrate.ts up
 
 # Rollback migration
 node -r esbuild-register database/migrate.ts down
+```
+
+## CloudFlare
+
+To start a local server for developing your Pages application, run:
+
+``` bash
+npx wrangler pages dev
+```
+
+To deploy a Pages application, publish a folder of static assets as a new deployment.
+This will automatically pull in git information if available.
+
+``` bash
+CLOUDFLARE_ACCOUNT_ID=<your-cloudflare-id> npx wrangler pages deploy <directory>
 ```
